@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+    <article id="contact">
+        <h2>Contact Me</h2>
+        <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+                <legend>Form</legend>
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" autocomplete="on" required>
+                </p>
+                <p>
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" name="lastname" id="lastname" required>
+                </p>
+                <p>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password">
+                </p>
+                <p>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{2}" placeholder="Enter phone number">
+                </p>
+                <p>
+                    <label for="number">Number:</label>
+                    <input type="number" name="number" id="number" min="200" max="300" step="20">
+                </p>
+                <p>
+                    <label for="content">Content:</label>
+                    <select name="content" id="content" multiple size="2">
+                        <optgroup label="Prime">
+                            <option value="one">One</option>
+                            <option value="two">Two</option>
+                        </optgroup>
+                        <optgroup label="Odd">
+                            <option value="three" selected>Three</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p>
+                    <label for="food">Choose the Food:</label>
+                    <input type="radio" name="food" id="food1" value="chicken">
+                    <label for="food1">Chicken</label>
+                    <input type="radio" name="food" id="food2" value="mutton">
+                    <label for="food2">Mutton</label>
+                </p>
+            </fieldset>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </article>
+</body>
+</html>
